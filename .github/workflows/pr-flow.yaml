@@ -8,5 +8,4 @@ jobs:
     steps:
       - run: echo "i have modify the pr wf" # modify the pr file 
 
-      - run: echo "$EVENT"
         
