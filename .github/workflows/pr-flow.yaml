@@ -6,6 +6,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "i have modify the pr wf"
+
       - run: echo "$EVENT"
         env:
           EVENT: ${{toJSON(github)}}
