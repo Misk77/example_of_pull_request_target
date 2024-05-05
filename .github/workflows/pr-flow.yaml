@@ -2,10 +2,12 @@ name: test-pr-wf
 on:
   pull_request_target: # Use pull_request_target
     branches: [master]
+    paths:
+      - "config/**/*"
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "$EVENT"
-        env:
-          EVENT: ${{toJSON(github)}}
+      - run: echo "i have modify the pr wf" # modify the pr file 
+
+        
