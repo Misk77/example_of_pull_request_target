@@ -9,5 +9,4 @@ jobs:
       - run: echo "i have modify the pr wf" # modify the pr file 
 
       - run: echo "$EVENT"
-        env:
-          EVENT: ${{toJSON(github)}}
+        
