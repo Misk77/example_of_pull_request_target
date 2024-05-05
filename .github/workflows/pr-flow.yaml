@@ -5,7 +5,7 @@ on:
     paths:
       - "config/**/*"
 jobs:
-  test:
+  test-pr-wf:
     runs-on: ubuntu-latest
     steps:
       - run: echo "pull_request_target is running" # modify the pr file 
