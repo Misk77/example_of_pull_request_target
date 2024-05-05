@@ -3,7 +3,7 @@ on:
   push: # ordinary push event for merge to master
     branches: [master]
 jobs:
-  test:
+  test-push-wf:
     runs-on: ubuntu-latest
     steps:
       - run: echo "$EVENT"
