@@ -1,6 +1,6 @@
 name: test-push-wf
 on:
-  pull_request_target: # Use pull_request_target
+  push: # ordinary push event for merge to master
     branches: [master]
 jobs:
   test:
